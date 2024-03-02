@@ -7,12 +7,6 @@ async function upload(request, path) {
   })
   const result = await form.parse(request)
 
-  let source;
-  for (const [key, value] of Object.entries(result)) {
-    console.log(`${key}: ${value}`);
-  }
-  
-
   return result
 }
 

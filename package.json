@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e js,json,hbs server.js"
+    "start": "nodemon -e js,json,hbs server.js",
+    "lint": "eslint ."
   },
   "author": "juan albores",
   "license": "ISC",
@@ -17,7 +17,8 @@
   "dependencies": {
     "express": "^4.18.2",
     "formidable": "^3.5.1",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "mysql2": "^3.9.1"
   },
   "nodemonConfig": {
     "ext": "js,json,hbs"
