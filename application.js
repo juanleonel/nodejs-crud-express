@@ -1,6 +1,7 @@
 const express = require('express')
 
 const userRoute = require('./routes/user.routes')
+const bodyParser = require('body-parser')
 
 class Application {
   constructor(config) {
@@ -12,11 +13,8 @@ class Application {
   init() {
     this._app.set('view engine', 'hbs')
     this._app.set('views', this._config.dir.views)
-    this._app.use(express.urlencoded({ extended: true }))
-
-    // this._app.get('/', (req, res) => {
-    //   return res.render('index', { title: 'Hello again!' })
-    // })
+    this._app.use(bodyParser.json())
+    this._app.use(bodyParser.urlencoded({ extended: true }))
 
     this._app.use(userRoute)
 

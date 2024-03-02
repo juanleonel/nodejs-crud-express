@@ -31,6 +31,7 @@ CREATE TABLE `employes` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `like_node` bit(1) NOT NULL,
   `image` varchar(250) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`employe_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

@@ -2,21 +2,63 @@
   <div class="row">
     <div class="col-md-12 mt-5">
       <h1>Users</h1>
-      <form action="/user/save" method="post" enctype="multipart/form-data">
+      <form action="/user/save" method="post" >
         <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Juan">
         </div>
         <div class="mb-3">
-          <label for="task" class="form-label">Task</label>
-          <textarea class="form-control" id="task" name="task" rows="3"></textarea>
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last name">
         </div>
         <div class="mb-3">
-          <label for="task" class="form-label">file</label>
-          <input type="file" id="image" name="image" accept="image/*" />
+            <label for="job" class="form-label">Job</label>
+            <input type="text" class="form-control" id="job" name="job" placeholder="Job">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input type="file" id="image" name="image" accept="image/*" />
         </div>
         <button class="btn btn-primary" type="submit">Send</button>
       </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
